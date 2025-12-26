@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unsupervised Learning Guide</title>
+</head>
+<style>
+    body{
+        font-size:30px;
+    }
+</style>
+<body bgcolor="#fdfdfb" style="height:100%;"> 
+    <table width="90%" align="center" border="0" margin="50" height="100%">
+        <tr>
+            <td>
+                <h1 align="center">Unsupervised Learning</h1>
+                <div align="center"><img src="unsupervised.png" alt="how supervised learning works" width="450px" border="1"></div>
+                <p>
+                    Unsupervised learning is a branch of Machine Learning where the model learns from unlabeled data. 
+                    Unlike supervised learning, there is no "supervisor"  to guide the process. 
+                    Instead, the model acts as a detective, scouring the data to find its own hidden structures and patterns.
+                </p>
+                <hr>
+                <h2>☆ How it works?</h2>
+                <p>In unsupervised learning, the algorithm receives input data (e.g., thousands of customer profiles) but no output labels (e.g., no "spam" or "non-spam" tags).</p>
+                <ol>
+                    <li><strong>Input Unlabeled Data</strong> 
+                        <blockquote>
+                            The model is fed raw data without any instructions on what it represents.
+                        </blockquote>
+                    </li>
+                    <li><strong>Pattern Discovery</strong>
+                        <blockquote>
+                            The algorithm looks for similarities, differences, or anomalies based on the mathematical distance between data points.
+                        </blockquote>
+                    </li>
+                    <li><strong>Output Structure</strong>
+                        <blockquote>
+                            The model provides a new organization of the data—such as groups of similar items or a simplified version of the data.
+                        </blockquote>
+                    </li>
+                </ol>
+                <hr>
+                <h2>☆ Key Concepts and Tasks</h2>
+                <h3>1. Clustering</h3>
+                <blockquote>
+                    The most common task in unsupervised learning. It involves grouping data points so that items in the same group (cluster) are more similar to each other than to those in other groups.<br>
+                    <ul>
+                        <li><strong>Example: </strong> A clothing brand uses clustering to group customers into "high spenders," "deal seekers," and "casual shoppers" based solely on their shopping habits</li>
+                        <li><strong>Common Algorithms: </strong>K-Means Clustering.</li>
+                    </ul>
+                </blockquote>
+                <h3>2. Association Rules</h3>
+                <blockquote>
+                    This technique discovers interesting relationships or "rules" that describe your data. 
+                    It looks for variables that often occur together.<br>
+                    <ul>
+                        <li><strong>Example: </strong> "Market Basket Analysis" finds that people who buy beer also tend to buy diapers. Stores use this to place these items closer together.</li>
+                        <li><strong>Common Algorithms: </strong>Apriori Algorithm.</li>
+                    </ul>
+                </blockquote>
+                <h3>3. Dimensionality Reduction</h3>
+                <blockquote>
+                    This is the process of reducing the number of random variables under consideration by obtaining a set of principal variables. 
+                    It simplifies complex data while keeping the most important information.<br>
+                    <ul>
+                        <li><strong>Example: </strong>Compressing a high-resolution image so it takes up less space but still looks clear to the human eye. </li>
+                        <li><strong>Common Algorithms: </strong>Principal Component Analysis (PCA).</li>
+                    </ul>
+                </blockquote>
+                <h3>4. Anomaly Detection</h3>
+                <blockquote>
+                    Identifying rare items, events, or observations which raise suspicions by differing significantly from the majority of the data.<br>
+                    <ul>
+                        <li><strong>Example: </strong>A bank's system notices a transaction in a foreign country that is 10x larger than your usual spending and flags it as potential fraud.</li>
+                    </ul>
+                </blockquote>
+                <hr>
+                <h2>☆ Supervised vs. Unsupervised Learning</h2>
+                <table border="1" cellpadding="10" cellspacing="5" margin="'2">
+                    <tr>
+                        <th>Feature</th>
+                        <th>Supervised Learning</th>
+                        <th>Unsupervised Learning</th>
+                    </tr>
+                    <tr>
+                        <th>Data Type</th>
+                        <td>Labeled</td>
+                        <td>Unlabeled</td>
+                    </tr>
+                    <tr>
+                        <th>Goal</th>
+                        <td>Predict outcomes for new data</td>
+                        <td>Find hidden patterns/structures</td>
+                    </tr>
+                    <tr>
+                        <th>Feedback</th>
+                        <td>Direct (Correct/Incorrect)</td>
+                        <td>No feedback</td>
+                    </tr>
+                    <tr>
+                        <th>Analogy</th>
+                        <td>Learning with a new teacher</td>
+                        <td>Learning by exploration</td>
+                    </tr>
+                </table>
+                <hr>
+                <section id="youtube-video"></section>
+                    <h2>☆ Watch this YT Video!</h2>
+                        <iframe border="1" width="560" height="315"
+                            src="https://youtube.com/embed/JnnaDNNb380"
+                            frameborder="0"
+                            allowfullscreen>
+                        </iframe>
+                </section>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
