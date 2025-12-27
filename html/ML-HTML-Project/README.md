@@ -1,6 +1,6 @@
 # About 
 
-📌 Link to the project: https://tinyurl.com/4tcbevv9
+📌 Link to the project: https://ml-html-project1.vercel.app
 
 This project is made using a lot of HTML and hints of CSS. My main aim was to get well versed with the tags and their functionalities. 
 
