@@ -1,5 +1,5 @@
 # ☆ About ☆
-I will summarize all the things I learnt during the process.
+Summary of all the things I learnt during the process.
 
 ## All the things I learnt in HTML
 
