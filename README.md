@@ -132,4 +132,16 @@
     <td>The Block Quotation</td>
     <td>Used for long, multi-line quotes. It is a "block-level" element, meaning it starts on a new line and takes up the full width available.</td>
   </tr>
+  <tr>
+    <th>21. </th>
+    <td>&lt;section&gt;</td>
+    <td>The Thematic Section</td>
+    <td>Used to define a standalone portion of a document, where related elements are grouped. Helps browsers and search engines work better.</td>
+  </tr>
+  <tr>
+    <th>22. </th>
+    <td>&lt;iframe&gt;</td>
+    <td>The Inline Frame</td>
+    <td>An element that allows you to nest an entirely different webpage within your own. Commonly used for embedding third-party content like YouTube videos, Google Maps, or social media posts.</td>
+  </tr>
   </table>
