@@ -80,5 +80,10 @@ Summary of all the things I learnt during the process.
     <td>&lt;em&gt;</td>
     <td>Italic</td>
     <td>Makes text italic</td>
+  </tr> 
+  <tr>
+    <td>&lt;hr&gt;</td>
+    <td>The Horizontal Rule</td>
+    <td>A <strong>self-closing</strong> that represents a thematic break between paragraph-level elements.</td>
   </tr>  
   </table>
