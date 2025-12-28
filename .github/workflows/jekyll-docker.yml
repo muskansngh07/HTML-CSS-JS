@@ -19,6 +19,7 @@ jobs:
         with:
           ruby-version: '3.2' # Specify your version
           bundler-cache: true # This speeds up builds by caching gems!
+          bundler: latest
 
       - name: Install dependencies
         run: bundle install
