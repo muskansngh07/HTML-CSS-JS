@@ -1,0 +1,75 @@
+/* How the body will look */
+body {
+    background-color:white;
+    font-family: 'Segoe-UI',Arial, sans-serif;
+    color: black;
+    margin:0px;
+    padding:50px;
+    height:100%;
+}
+#profile-pic{
+    border-radius:50%;
+    width:250px;
+}
+#intro{
+    text-align:center;
+}
+
+/*How the headers will look */
+h1{
+    color:brown;
+    text-align:center;
+}
+
+h2{
+    color:brown;
+    text-align:center;
+}
+
+p{
+    margin-top:25px;
+    margin-bottom:25px;
+}
+form{
+    width:500px;
+    padding:20px;
+    margin: auto; /*auto centers whole block*/
+    text-align:center;
+    border:1px solid black;
+    border-radius:1px;
+    height:auto;
+}
+
+#education-det {
+    margin: 0 auto; /* This is how you center a table in CSS */
+    border: 2px solid black; /* Width, Style, Color */
+    border-collapse: collapse; /* This removes the gaps between cells */
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+
+#education-det td, #education-det th {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+#about-me p{
+    text-align:center;
+    margin:25px auto;
+    line-height:1.6;
+}
+
+#youtube-video{
+    text-align: center;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* This keeps the padding inside the width */
+}
