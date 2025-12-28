@@ -102,4 +102,28 @@
     <td>The Horizontal Rule</td>
     <td>A <strong>self-closing</strong> that represents a thematic break between paragraph-level elements.</td>
   </tr>  
+  <tr>
+    <th>16. </th>
+    <td>&lt;table&gt;</td>
+    <td>The Table Wrapper</td>
+    <td>Used to arrange data in the form of rows and columns.</td>
+  </tr>
+  <tr>
+    <th>17. </th>
+    <td>&lt;tr&gt;</td>
+    <td>Table Row</td>
+    <td>Defines a single horizontal row of cells.</td>
+  </tr>
+  <tr>
+    <th>18. </th>
+    <td>&lt;th&gt;</td>
+    <td>Table Header</td>
+    <td>Used for the first row or column to define the labels. Text inside is usually bold and centered by default.</td>
+  </tr>
+  <tr>
+    <th>19. </th>
+    <td>&lt;td&gt;</td>
+    <td>Table Data</td>
+    <td>The standard cell that holds the actual content (text, images, or links).</td>
+  </tr>
   </table>
