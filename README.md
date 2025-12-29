@@ -144,4 +144,24 @@
     <td>The Inline Frame</td>
     <td>An element that allows you to nest an entirely different webpage within your own. Commonly used for embedding third-party content like YouTube videos, Google Maps, or social media posts.</td>
   </tr>
-  </table>
+</table>
+
+## All the things I learnt in CSS
+
+1. The Rule Set
+
+The CSS "Rule" is the entire block of code that applies the style. It consists of three components:
+- Selector
+   <blockquote>
+  "Who"; It points to the HTML element we want to style.
+  </blockquote>
+
+- Property
+  <blockquote>
+    "What"; The feature we want to change.
+  </blockquote>
+
+- Value
+  <blockquote>
+    "How"; What chnage we want to bring. 
+  </blockquote>
