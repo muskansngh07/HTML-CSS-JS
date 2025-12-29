@@ -150,74 +150,12 @@
 
 ## All the things I learnt in CSS
 
-### *⭐️ The Rule Set*
+### Step 1
 
-The CSS "Rule" is the entire block of code that applies the style. It consists of three components:
-- Selector
-   <blockquote>
-  "Who"; It points to the HTML element we want to style.
-  </blockquote>
+Link the `.html` file with `.css` file using the `link` tag as follows:
 
-- Property
-  <blockquote>
-    "What"; The feature we want to change.
-  </blockquote>
+```
+<link rel="stylesheet" href="name.css">
+```
 
-- Value
-  <blockquote>
-    "How"; What chnage we want to bring. 
-  </blockquote>
-
-### *⭐️ The Box Model*
-
-This is the most important concept in all of CSS. Every HTML element is treated as a rectangular box. The model consists of four layers:
-
-- Content: The actual text or image.
-- Padding: The transparent space inside the box, between the content and the border.
-- Border: The line that goes around the padding and content.
-- Margin: The transparent space outside the box, used to push other elements away.
-
-### *⭐️ Selectors*
-
-To style specific things without affecting the whole page, we use different selectors:
-
-- **Tag Selector**: Targets every instance of a tag
-  <blockquote>
-    e.g., p { } styles every paragraph
-  </blockquote>
-  
-
-- **Class Selector (.)**: Targets elements with a specific class attribute. You can use the same class on many elements. 
-  <blockquote>
-    e.g., .highlight { }
-  </blockquote>
-
-- **ID Selector (#)**: Targets one unique element with a specific id. You should only use an ID once per page. 
-  <blockquote>
-    e.g., #profile-pic { }
-  </blockquote>
-
-### *⭐️ Units of Measurement*
-
-How we define size in CSS:
-
-- **px (Pixels)**: An absolute unit. 20px is always exactly 20 pixels on a screen.
-- **% (Percentage)**: A relative unit. width: 50% means the element will take up half the width of its parent container.
-- **vh/vw (Viewport Height/Width)**: Units based on the screen size. 100vh means 100% of the screen's height.
-
-### *⭐️ Colors (The Three Formats)*
-
-- Color Names: Simple but limited 
-  <blockquote>
-    e.g., red, blue, brown
-  </blockquote>
-
-- Hex Codes: A 6-digit code representing Red, Green, and Blue. 
-  <blockquote>
-    e.g., #FFFFFF is white, #000000 is black
-  </blockquote>
-
-- RGB/RGBA: Defines colors by numbers (0-255). The "A" in RGBA stands for Alpha (transparency).
-   <blockquote>
-     e.g., rgba(0, 0, 0, 0.5) is semi-transparent black
-   </blockquote>
+The `rel` tells the browser what relationship the HTML file with the CSS file. 
