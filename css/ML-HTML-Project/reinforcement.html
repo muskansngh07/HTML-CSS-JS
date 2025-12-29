@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reinforcement Learning Guide</title>
+</head>
+<style>
+    body{
+        font-size:30px;
+    }
+</style>
+<body bgcolor="#fdfdfb" style="height:100%;"> 
+    <table width="90%" align="center" border="0" margin="50" height="100%">
+        <tr>
+            <td>
+                <h1 align="center">Reinforcement Learning</h1>
+                <div align="center"><img src="images/reinforcement.png" alt="how supervised learning works" width="450px" border="1"></div>
+                <p>
+                    It is a branch of machine learning that focuses on how an agent learns to make decisions by performing actions in an environment to maximize a reward. It learns
+                    from its own experience, essentially through trial and error.
+                </p>
+                <hr>
+                <h2>☆ How it works?</h2>
+                <p>The core of reinforcement learning is a continuous feedback loop between the agent and its surroundings.</p>
+                <ol>
+                    <li><strong>Agent</strong>: The learner or decision-maker (e.g., a robot or a software program).</li>
+                    <li><strong>Environment</strong>: Everything an agent interacts with (e.g., a game board or a physical room).</li>
+                    <li><strong>State (S)</strong>: The current situation or configuration of the environment.</li>
+                    <li><strong>Reward (R)</strong>: Feedback from the environment (either positive or negative).</li>
+                </ol>
+                <hr>
+                <h2>☆ Key Concepts</h2>
+                <h3>1. Exploration vs. Exploitation</h3>
+                <blockquote>
+                    <p>This is the fundamental trade-off in RL:</p>
+                    <ul>
+                        <li><strong>Exploration: </strong>Trying new things to see if they lead to better rewards.</li>
+                        <li><strong>Exploitation:</strong>This is used when the output is a continuous numerical value. The computer is trying to find a "best-fit line" that represents the relationship between variables.</li>
+                     </ul>
+                </blockquote>
+                <h3>2. The Policy (π)</h3>
+                <blockquote>
+                    The policy is the "brain" or strategy of the agent. It maps states to actions, telling the agent, "If you are in state S, you should take action A."
+                </blockquote>
+                <h3>3. The Value Function (V or Q)</h3>
+                <blockquote>
+                    While rewards are immediate, the Value Function predicts the long-term total reward an agent can expect from a specific state or action. This helps the agent understand that a small reward now might lead to a huge loss later, or vice versa.
+                </blockquote>
+                <hr>
+                <h2>☆ Real-World Applications</h2>
+                <ul>
+                    <li>Gaming</li>
+                    <li>Robotics</li>
+                    <li>Healthcare</li>
+                    <li>Recommendation Systems</li>
+                </ul>
+                <hr>
+                <section id="youtube-video"></section>
+                    <h2>☆ Watch this YT Video!</h2>
+                        <div align="center"><iframe border="1" width="560" height="315"
+                            src="https://youtube.com/embed/nIgIv4IfJ6s"
+                            frameborder="0"
+                            allowfullscreen>
+                        </iframe></div>
+                </section>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

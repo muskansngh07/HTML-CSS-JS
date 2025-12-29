@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The ML Guide</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main-wrapper">
+                    <h1><u>ML Verse</u></h1>
+                    <div>
+                    <img id="computer" src="images/ml.jpg" alt="A Computer">
+                    </div>
+                    <section id="intro">
+                    <h2 id="intro">What is Machine Learning?</h2>
+                    <p>It is a branch of Artificial Intelligence (AI) that is used to build systems that rely on data provided to them.
+                    Instead of a specific rules to be written for a computer to do its job, the computer is given a large amount of data and it uses 
+                     algorithms to discover the rules and patterns itself.
+                    </p>
+                    </section>
+                    
+                    <section id="comparison">
+                    <h2 id="comparison">Traditional Programming vs. Machine Learning</h2>
+                    <p>Machine Learning is such a paradigm shift in the world of technology. 
+                        Following provides a comprehensive comparison of traditional programming and machine learning: </p>
+                    <h3 id="logic">❀ Traditional Programming: Logic first</h3>
+                        <blockquote>
+                            <p>In this approach, a programmer writes a manual script (rules) to process data.</p>
+                            <ul>
+                            <li><strong>Example: </strong> A banking app. <br>
+                            The programmer writes a rule: "If account balance < $0, then send a 'Low Balance' alert." 
+                            The computer simply follows that instruction every single time.
+                            </li>
+                            </ul>
+                        </blockquote>
+                    <div><h3 id="data">❀ Machine Learning: Data first</h3></div>
+                        <blockquote>
+                            <p>We give the computer the data and the desired answers, and it figures out the patterns itself.</p>
+                            <ul>
+                                <li><strong>Example: </strong> A spam filter. <br>
+                                Instead of writing a rule for every possible spam word, you show the computer 10, 000 "Spam" emails and 10,000 "Not Spam" emails. 
+                                The computer identifies the subtle patterns that make an email spam
+                                </li>
+                            </ul>
+                        </blockquote>
+                    </section>
+                    
+                    <section id="terms">
+                        <h2>Basic Terminology</h2>
+                        <section class="terms-content">
+                            <h3>1. The Data Building Blocks</h3>
+                            <ul>
+                                <li><strong>Feature: </strong> An individual measurable property or "variable" of the data you are analyzing.</li>
+                                <li><strong>Label: </strong> The "answer" or the target you are trying to predict (e.g., the actual "price" of the house).</li>
+                                <li><strong>Dataset: </strong> The collection of examples used for learning. It is usually split into: 
+                                    <ul>
+                                        <li>Training Set: Data used to teach the model.</li>
+                                        <li>Test Set: Data used to see how well the model performs.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <h3>2. Training Terms</h3>
+                            <ul>
+                                <li><strong>Algorithm: </strong>The specific mathematical procedure used to find patterns in data (e.g., Linear Regression, Decision Trees).</li>
+                                <li><strong>Model: </strong> The "finished product." It is what you get after you run an algorithm on your training data.</li>
+                                <li><strong>Epoch: </strong>One full pass of the entire training dataset through the model. If you train for 10 epochs, the model has "seen" the data 10 times.</li>
+                                <li><strong>Loss Function: </strong> A mathematical formula that calculates how "wrong" the model's prediction was. The goal of training is to make this number as small as possible.</li>
+                            </ul>
+                        </section>
+                    </section>
+                    
+
+                    <section id="workflow">
+                    <h2>The ML Workflow</h2>
+                    <div><img src="images/flowchart.png" alt="ML Workflow" id="flowchart"></div>
+                    </section>
+                    
+                    <section id="types">
+                    <h2>Types of Machine Learning Systems</h2>
+                    <ul>
+                        <li><a href="supervised.html" target="_blank">Supervised Learning</a></li>
+                        <li><a href="unsupervised.html" target="_blank">Unsupervised Learning</a></li>
+                        <li><a href="reinforcement.html" target="_blank">Reinforcement Learning</a></li>
+                        <li><a href="semi-supervised.html" target="_blank">Semi-Supervised Learning</a></li>
+                    </ul>
+                    </section>
+                    
+
+                    <section id="yt">
+                    <h2>Watch this YT Video!</h2>
+                        <section class="yt-video">
+                            <iframe width="560" height="315"
+                            src="https://youtube.com/embed/ukzFI9rgwfU"
+                            title="youtube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                            </iframe>
+                        </section>
+                    </section>
+                    
+
+                    <section id="form">
+                        <h2>Reach Out</h2>
+                        <section class="contents">
+                            <form>
+                                
+                                <label for="fname">First Name:</label><br>
+                                <input type="text" id="fname" name="firstname" placeholder="Your name" 
+                                       style="width: 100%; padding: 12px; margin: 8px 0; font-size: 16px; border: 1px solid #ccc; border-radius: 4px;"><br>
+                        
+                                <label for="email">Your email address:</label><br>
+                                <input type="email" id="email" name="email" placeholder="example@gmail.com" required 
+                                       style="width: 100%; padding: 12px; margin: 8px 0; font-size: 16px; border: 1px solid #ccc; border-radius: 4px;"><br>
+                        
+                                <label for="subject">Reason for contact:</label><br>
+                                <textarea id="message" name="subject" rows="8" placeholder="Your reason" required 
+                                          style="width: 100%; padding: 12px; margin: 8px 0; font-size: 16px; border: 1px solid #ccc; border-radius: 4px;"></textarea><br>
+                        
+                                <input type="submit" value="Submit Message" 
+                                       style="width: 100%; background-color: #bbb; color: white; padding: 14px; border: none; border-radius: 4px; cursor: pointer; font-size: 18px; font-weight: bold;">
+                            </form>
+                        </section>
+                    </section>
+        </div>
+    </body>
+</html>

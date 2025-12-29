@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Semi-Supervised Learning Guide</title>
+</head>
+<style>
+    body{
+        font-size:30px;
+    }
+</style>
+<body bgcolor="#fdfdfb" style="height:100%;"> 
+    <table width="90%" align="center" border="0" margin="50" height="100%">
+        <tr>
+            <td>
+                <h1 align="center">Semi-Supervised Learning</h1>
+                <div align="center"><img src="images/semi-supervised.png" alt="how supervised learning works" width="300px" border="1"></div>
+                <p>
+                    Semi-supervised learning is a hybrid approach to machine learning that sits 
+                    between supervised (all labeled data) and unsupervised (no labeled data) learning. 
+                    It is specifically designed for situations where you have a massive amount of data, 
+                    but only a tiny fraction of it is labeled.
+                </p>
+                <hr>
+                <h2>☆ How it works?</h2>
+                <p>The general process often follows these steps:</p>
+                <ol>
+                    <li><strong>Initial Training</strong> 
+                        <blockquote>
+                            The model is trained on the small set of labeled data, just like in supervised learning.
+                        </blockquote>
+                    </li>
+                    <li><strong>Pseudo-Labeling</strong>
+                        <blockquote>
+                            The model is then used to predict labels for the unlabeled data. Because the model isn't perfect yet, these are called "pseudo-labels."
+                        </blockquote>
+                    </li>
+                    <li><strong>Filtering</strong>
+                        <blockquote>
+                            The predictions with the highest confidence are added to the training set as if they were real labels.
+                        </blockquote>
+                    </li>
+                    <li>
+                        <strong>Retraining</strong>
+                        <blockquote>
+                            The model is retrained on the now-expanded dataset (original labeled data + high-confidence pseudo-labeled data). 
+                            This cycle repeats to refine accuracy.
+                        </blockquote>
+                    </li>
+                </ol>
+                <hr>
+                <h2>☆ Key Concepts and Assumptions</h2>
+                <p>For semi-supervised learning to work, algorithms rely on three core assumptions:</p>
+                <ul>
+                    <li><strong>Continuity Assumption</strong>
+                        <blockquote>
+                            Points that are close to each other in the data space are likely to share the same label.
+                        </blockquote>
+                    </li>
+                    <li><strong>Cluster Assumption</strong>
+                        <blockquote>
+                            Data naturally forms groups (clusters). If two points are in the same cluster, they likely belong to the same category.
+                        </blockquote>
+                    </li>
+                    <li><strong>Manifold Assumption</strong>
+                        <blockquote>
+                            High-dimensional data (like images) actually lies on a lower-dimensional "surface" or manifold. 
+                            The model tries to learn this surface to better separate classes.
+                        </blockquote>
+                    </li>
+                </ul>
+                <hr>
+                <h2>☆ Common Techniques</h2>
+                <table border="1" cellpadding="10" cellspacing="5" margin="2">
+                    <tr>
+                        <th>Technique</th>
+                        <th>How it works</th>
+                    </tr>
+                    <tr>
+                        <th>Self-Training</th>
+                        <td>The model labels its own unlabeled data and uses the best guesses for its next round of training.</td>
+                    </tr>
+                    <tr>
+                        <th>Co-Training</th>
+                        <td>Two different models look at the same data from different "views" (e.g., text vs. images) and teach each other.</td>
+                    </tr>
+                    <tr>
+                        <th>Graph-Based SSL</th>
+                        <td>Data points are treated as "nodes" in a web. Labels "spread" like a virus from labeled nodes to their closest unlabeled neighbors.</td>
+                    </tr>
+                </table>
+                <hr>
+                <h2>☆ Real-World Use Cases</h2>
+                <ul>
+                    <li>Medical Imaging</li>
+                    <li>Speech Recognition</li>
+                    <li>Web Classification</li>
+                </ul>
+                <hr>
+                <section id="youtube-video"></section>
+                    <h2>☆ Watch this YT Video!</h2>
+                        <div align="center"><iframe border="1" width="560" height="315"
+                            src="https://youtube.com/embed/C3Lr6Waw66g"
+                            frameborder="0"
+                            allowfullscreen>
+                        </iframe></div>
+                </section>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+
+body{
+    background: #f1f2d5;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display:flex;
+    justify-content:center;
+    padding:0px;
+    margin:10px;
+}
+
+.main-wrapper{
+    background:white;
+    height:100%;
+    max-width:1000px;
+    padding:90px;
+    margin-top:25px;
+}
+
+h1{
+    text-align: center;
+    padding-top:2px;
+    margin-bottom:20px;
+}
+h2{
+    text-align: center;
+    padding-top:50px;
+    margin-bottom:20px; 
+}
+/* deals with introduction */
+#intro{
+    text-align:center;
+    line-height:20px;
+    padding-bottom:50px;
+}
+
+/* deals with comparison of tp and ml*/
+#comparison{
+    padding-top:5px;
+    padding-bottom:50px;
+}
+#comparison p{
+    padding-bottom:10px;
+}
+#comparison h3{
+    margin-top:10px;
+    margin-bottom:15px;
+}
+
+/*deals with ml workflow section*/
+#workflow{
+    padding-top:5px;
+    padding-bottom:50px;
+
+}
+#types{
+    padding-top:5px;
+    padding-bottom:50px;
+}
+
+/* deals with the yt video */
+#yt{
+    margin-top:20px;
+    margin-bottom:50px;
+}
+.yt-video{
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+/* deals with the form */
+#form{
+    margin-top:50px;
+}
+.contents{
+    margin-top:50px;
+    margin-bottom:50px;
+    width:100%;
+    text-align:center;
+}
+
+/* deals with basic terminology section*/
+#terms{
+    padding-bottom:50px;
+}
+#terms ul {
+    margin-top:10px;
+    padding-bottom:10px;
+    line-height:1.5;
+}
+.terms-content ul ul {
+    margin-top: 0%;      /* Space above the sub-list */
+    margin-left: 20px;    /* Pushes it further right to show hierarchy */
+    list-style-type: circle; /* Changes the bullet shape for variety */
+}
+
+#computer{
+    display:block;
+    margin: 0 auto;
+    width:150px;
+    height:150px;
+    object-fit:cover;
+    border-radius:50%;
+    border:4px solid white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+#flowchart{
+    display:block;
+    margin: 30px auto;
+    max-width:90%;
+    height:100%;
+    border:8px solid white;
+    
+}
+section { 
+    border-bottom: 1px solid #eee; /* A very subtle line instead of a heavy <hr> */
+}
+
+/* Remove the border from the very last section */
+section:last-child {
+    border-bottom: none;
+}
