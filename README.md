@@ -150,7 +150,7 @@
 
 ## All the things I learnt in CSS
 
-### Step 1
+### 1️⃣ Step 1
 
 Link the `.html` file with `.css` file using the `link` tag as follows:
 
@@ -159,3 +159,15 @@ Link the `.html` file with `.css` file using the `link` tag as follows:
 ```
 
 The `rel` tells the browser what relationship the HTML file with the CSS file. 
+
+### 2️⃣ The Universal Reset
+
+```
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+}
+```
+
+Every browser (Safari, Chrome, Firefox) adds its own tiny bits of default space (margins and padding) to elements. This makes our layout look different on every computer. We use the `*` selector (the "Universal" selector) to tell every element to start from zero and behave predictably.
