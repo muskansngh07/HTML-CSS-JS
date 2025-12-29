@@ -4,6 +4,27 @@ html {
 * {
     box-sizing: border-box;
 }
+/* Define the animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply it to the main content */
+.main-wrapper {
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Apply a slightly delayed version to the profile pic */
+#profile-pic {
+    animation: fadeInUp 1.2s ease-out;
+}
 .navbar {
     display: flex;
     justify-content: space-between; /* Pushes logo to left, links to right */
@@ -11,6 +32,10 @@ html {
     padding: 15px 50px;
     background-color: white;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent */
+    backdrop-filter: blur(10px);        /* Blurs what's behind the nav */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
     
     /* This makes the Nav stay at the top when you scroll */
     position: sticky;
@@ -27,14 +52,25 @@ html {
 }
 
 .nav-links a {
-    text-decoration: none; /* Removes the underline */
+    text-decoration: none;
     color: #333;
     font-weight: bold;
-    transition: 0.3s;      /* Makes the hover effect smooth */
+    position: relative; /* Needed for the underline positioning */
 }
 
-.nav-links a:hover {
-    color: brown;          /* Changes color when mouse is over it */
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: brown;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%; /* The underline grows to full width */
 }
 body {
     display:flex;
@@ -46,6 +82,7 @@ body {
     margin:0px;
     padding:20px;
     height:100%;
+    font-family:'Poppins',sans-serif;
 }
 .main-wrapper{
     width:90%;
@@ -54,6 +91,7 @@ body {
     padding:40px;
     border-radius:15px;
     box-shadow:0 10px 30px rgba(0,0,0,0.05);
+    border:1px solid rgba(0,0,0,0.05);
 }
 .flex-header{
     display:flex;
@@ -70,6 +108,8 @@ body {
 #profile-pic{
     border-radius:50%;
     width:250px;
+    border: 5px solid white;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
 }
 
 /*How the headers will look */
@@ -98,17 +138,25 @@ form{
 }
 
 #education-det {
-    margin: 0 auto; /* This is how you center a table in CSS */
-    border: 2px solid black; /* Width, Style, Color */
-    border-collapse: collapse; /* This removes the gaps between cells */
-    margin-top:50px;
-    margin-bottom:50px;
+    width: 100%;
+    border-collapse: separate; /* Required for border-radius on tables */
+    border-spacing: 0 10px;    /* Adds space between rows */
+    border: none;              /* Remove the old black border */
 }
 
+#education-det tr {
+    background: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* Soft shadow for each row */
+    transition: transform 0.3s ease;
+}
 
-#education-det td, #education-det th {
-    padding: 15px;
-    border: 1px solid #ddd;
+#education-det tr:hover {
+    transform: scale(1.02); /* Very subtle "pop" when you hover */
+}
+
+#education-det td {
+    padding: 20px;
+    border: none;
 }
 
 #about-me p{
@@ -130,6 +178,23 @@ input[type="text"], input[type="email"], textarea {
     border-radius: 4px;
     box-sizing: border-box; /* This keeps the padding inside the width */
 }
+/* Style your Submit Button */
+input[type="submit"] {
+    background-color: brown;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease; /* Smoothly animate all changes */
+}
+
+input[type="submit"]:hover {
+    background-color: #5e2c2c;
+    transform: translateY(-2px); /* Lifts up slightly */
+    box-shadow: 0 5px 15px rgba(165, 42, 42, 0.3);
+}
 section {
     padding: 60px 0; /* 60px space on top and bottom */
     border-bottom: 1px solid #eee; /* A very subtle line instead of a heavy <hr> */
@@ -138,4 +203,29 @@ section {
 /* Remove the border from the very last section */
 section:last-child {
     border-bottom: none;
+}
+
+@media(max-width:768px){
+    .flex-header{
+        flex-direction: column;
+        text-align:center;
+        gap:20px;
+    }
+
+    .main-wrapper{
+        width:95%;
+        padding:20px;
+
+    }
+    .navbar{
+        padding: 10px 20px;
+        background: rgba(255, 255, 255, 0.8); /* Semi-transparent */
+        backdrop-filter: blur(10px);        /* Blurs what's behind the nav */
+        -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    }
+
+    .nav-links{
+        gap:10px;
+        font-size:14px;
+    }
 }
